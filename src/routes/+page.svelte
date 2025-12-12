@@ -2,7 +2,7 @@
   import Navbar from '$lib/components/Navbar.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import Logos from '$lib/components/Logos.svelte';
-  import WhyEcho from '$lib/components/WhyEcho.svelte';
+  import WhyRebar from '$lib/components/WhyRebar.svelte';
   import Products from '$lib/components/Products.svelte';
   import Founders from '$lib/components/Founders.svelte';
   import FAQ from '$lib/components/FAQ.svelte';
@@ -14,7 +14,7 @@
   <Navbar />
   <Hero />
   <Logos />
-  <WhyEcho />
+  <WhyRebar />
   <Products />
   <Founders />
   <FAQ />
