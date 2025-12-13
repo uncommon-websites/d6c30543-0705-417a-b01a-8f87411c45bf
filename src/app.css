@@ -1,42 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-	/* Colors */
-	--color-gray-50: #f9f9f9;
-	--color-gray-100: #f3f3f3;
-	--color-gray-200: #e5e5e5;
-	--color-gray-300: #d4d4d4;
-	--color-gray-400: #a3a3a3;
-	--color-gray-500: #737373;
-	--color-gray-600: #525252;
-	--color-gray-700: #404040;
-	--color-gray-800: #262626;
-	--color-gray-900: #171717;
-	--color-gray-950: #0a0a0a;
+	/* Warm Neutral Colors - Solarpunk inspired */
+	--color-gray-50: #faf9f7;
+	--color-gray-100: #f5f3ef;
+	--color-gray-200: #ebe7df;
+	--color-gray-300: #ddd7cc;
+	--color-gray-400: #b8aea0;
+	--color-gray-500: #8a7f70;
+	--color-gray-600: #6b5f52;
+	--color-gray-700: #4d4439;
+	--color-gray-800: #332d24;
+	--color-gray-900: #1f1b15;
+	--color-gray-950: #0f0d0a;
 
-	--color-primary-50: oklch(0.982 0.018 155.826);
-	--color-primary-100: oklch(0.962 0.044 156.743);
-	--color-primary-200: oklch(0.925 0.084 155.995);
-	--color-primary-300: oklch(0.871 0.15 154.449);
-	--color-primary-400: oklch(0.792 0.209 151.711);
-	--color-primary-500: oklch(0.723 0.219 149.579);
-	--color-primary-600: oklch(0.627 0.194 149.214);
-	--color-primary-700: oklch(0.527 0.154 150.069);
-	--color-primary-800: oklch(0.448 0.119 151.328);
-	--color-primary-900: oklch(0.393 0.095 152.535);
-	--color-primary-950: oklch(0.266 0.065 152.934);
+	/* Warm Green Primary - Life-affirming, organic */
+	--color-primary-50: oklch(0.982 0.025 145);
+	--color-primary-100: oklch(0.962 0.055 145);
+	--color-primary-200: oklch(0.925 0.095 143);
+	--color-primary-300: oklch(0.871 0.16 140);
+	--color-primary-400: oklch(0.792 0.22 138);
+	--color-primary-500: oklch(0.723 0.23 136);
+	--color-primary-600: oklch(0.627 0.20 135);
+	--color-primary-700: oklch(0.527 0.16 134);
+	--color-primary-800: oklch(0.448 0.125 133);
+	--color-primary-900: oklch(0.393 0.10 132);
+	--color-primary-950: oklch(0.266 0.07 131);
 
-	--color-secondary-50: oklch(97% 0.015 30);
-	--color-secondary-100: oklch(92% 0.02 30);
-	--color-secondary-200: oklch(86% 0.03 30);
-	--color-secondary-300: oklch(80% 0.04 30);
-	--color-secondary-400: oklch(74% 0.05 30);
-	--color-secondary-500: oklch(68% 0.06 30);
-	--color-secondary-600: oklch(60% 0.07 30);
-	--color-secondary-700: oklch(52% 0.08 30);
-	--color-secondary-800: oklch(40% 0.09 30);
-	--color-secondary-900: oklch(30% 0.1 30);
-	--color-secondary-950: oklch(20% 0.11 30);
+	/* Terracotta Secondary - Warm, earthy accent */
+	--color-secondary-50: oklch(97% 0.02 45);
+	--color-secondary-100: oklch(92% 0.035 45);
+	--color-secondary-200: oklch(86% 0.05 45);
+	--color-secondary-300: oklch(80% 0.07 42);
+	--color-secondary-400: oklch(74% 0.09 40);
+	--color-secondary-500: oklch(68% 0.11 38);
+	--color-secondary-600: oklch(60% 0.12 36);
+	--color-secondary-700: oklch(52% 0.11 35);
+	--color-secondary-800: oklch(40% 0.09 34);
+	--color-secondary-900: oklch(30% 0.07 33);
+	--color-secondary-950: oklch(20% 0.05 32);
 
 	--font-body: var(--font-family), var(--font-fallback);
 	--font-display: var(--font-body);
