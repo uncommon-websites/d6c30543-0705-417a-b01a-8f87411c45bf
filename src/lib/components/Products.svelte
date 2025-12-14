@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import SectionLabel from './SectionLabel.svelte';
+  import { fadeInOnScroll } from '$lib/utils/scrollAnimation';
 </script>
 
 <section class="bg-[#f5f5f5] px-6 py-24 border-t border-gray-200">
@@ -9,7 +10,7 @@
     </div>
     
     <div class="lg:col-span-9">
-      <div class="mb-16">
+      <div class="mb-16" use:fadeInOnScroll>
         <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-2">
           Data streams, calculations,
         </h2>

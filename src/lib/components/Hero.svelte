@@ -49,18 +49,77 @@
         <path d="M700,350 Q1000,380 1300,400" stroke="oklch(0.792 0.22 138)" stroke-width="1.5" stroke-opacity="0.5" vector-effect="non-scaling-stroke" />
         <path d="M700,350 Q1000,420 1300,500" stroke="oklch(0.792 0.22 138)" stroke-width="1.5" stroke-opacity="0.4" vector-effect="non-scaling-stroke" />
         
-        <!-- Node circles -->
-        <circle cx="100" cy="200" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6" />
-        <circle cx="100" cy="300" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6" />
-        <circle cx="100" cy="400" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6" />
-        <circle cx="100" cy="500" r="4" fill="oklch(0.723 0.23 136)" opacity="0.5" />
+        <!-- Animated data pulses flowing through the network -->
+        <circle r="3" fill="oklch(0.723 0.23 136)" opacity="0.8">
+          <animateMotion dur="4s" repeatCount="indefinite" path="M100,200 Q400,180 700,350" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" repeatCount="indefinite" />
+        </circle>
+        <circle r="3" fill="oklch(0.723 0.23 136)" opacity="0.8">
+          <animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M100,300 Q400,320 700,350" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle r="3" fill="oklch(0.723 0.23 136)" opacity="0.8">
+          <animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M100,400 Q400,380 700,350" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" begin="2s" repeatCount="indefinite" />
+        </circle>
         
-        <circle cx="700" cy="350" r="8" fill="oklch(0.723 0.23 136)" opacity="0.8" />
+        <circle r="3" fill="oklch(0.792 0.22 138)" opacity="0.8">
+          <animateMotion dur="3.5s" repeatCount="indefinite" path="M700,350 Q1000,320 1300,200" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3.5s" repeatCount="indefinite" />
+        </circle>
+        <circle r="3" fill="oklch(0.792 0.22 138)" opacity="0.8">
+          <animateMotion dur="3.5s" begin="1s" repeatCount="indefinite" path="M700,350 Q1000,350 1300,300" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3.5s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle r="3" fill="oklch(0.792 0.22 138)" opacity="0.8">
+          <animateMotion dur="3.5s" begin="2s" repeatCount="indefinite" path="M700,350 Q1000,380 1300,400" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3.5s" begin="2s" repeatCount="indefinite" />
+        </circle>
         
-        <circle cx="1300" cy="200" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6" />
-        <circle cx="1300" cy="300" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6" />
-        <circle cx="1300" cy="400" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6" />
-        <circle cx="1300" cy="500" r="4" fill="oklch(0.792 0.22 138)" opacity="0.5" />
+        <!-- Node circles with pulsing animation -->
+        <circle cx="100" cy="200" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="100" cy="300" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="0.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" begin="0.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="100" cy="400" r="4" fill="oklch(0.723 0.23 136)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="1s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="100" cy="500" r="4" fill="oklch(0.723 0.23 136)" opacity="0.5">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="1.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="1.5s" repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Center node with larger pulse -->
+        <circle cx="700" cy="350" r="8" fill="oklch(0.723 0.23 136)" opacity="0.8">
+          <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="700" cy="350" r="8" fill="oklch(0.723 0.23 136)" opacity="0.3">
+          <animate attributeName="r" values="8;20;8" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite" />
+        </circle>
+        
+        <circle cx="1300" cy="200" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1300" cy="300" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="0.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" begin="0.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1300" cy="400" r="4" fill="oklch(0.792 0.22 138)" opacity="0.6">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="1s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" begin="1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1300" cy="500" r="4" fill="oklch(0.792 0.22 138)" opacity="0.5">
+          <animate attributeName="r" values="4;6;4" dur="2s" begin="1.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" begin="1.5s" repeatCount="indefinite" />
+        </circle>
       </svg>
 
       <!-- Labels for the flow -->

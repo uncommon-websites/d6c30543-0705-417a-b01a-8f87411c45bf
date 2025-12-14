@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import SectionLabel from './SectionLabel.svelte';
+  import { fadeInOnScroll } from '$lib/utils/scrollAnimation';
 </script>
 
 <section class="bg-[#f5f5f5] px-6 py-24">
@@ -10,7 +11,7 @@
     
     <div class="lg:col-span-9 space-y-16">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
+        <div use:fadeInOnScroll={{ delay: 100 }}>
           <h2 class="font-serif text-3xl md:text-4xl leading-tight text-gray-900 mb-6">
             Build blockchain apps without managing infrastructure
           </h2>
@@ -19,7 +20,7 @@
           </p>
         </div>
         
-        <div class="flex gap-12 items-end pb-2">
+        <div class="flex gap-12 items-end pb-2" use:fadeInOnScroll={{ delay: 200 }}>
           <div class="flex flex-col gap-1">
               <span class="text-4xl font-bold text-gray-900">50+</span>
               <span class="text-xs text-gray-400">blockchains supported</span>
