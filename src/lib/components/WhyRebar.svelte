@@ -5,11 +5,11 @@
 
 <section class="bg-[#f5f5f5] px-6 py-24">
   <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-3">
+    <div class="lg:col-span-4">
       <SectionLabel label="Why Rebar" />
     </div>
     
-    <div class="lg:col-span-9 space-y-16">
+    <div class="lg:col-span-8 space-y-16">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div use:fadeInOnScroll={{ delay: 100 }}>
           <h2 class="font-serif text-3xl md:text-4xl leading-tight text-gray-900 mb-6">

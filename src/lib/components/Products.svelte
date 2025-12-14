@@ -5,11 +5,11 @@
 
 <section class="bg-[#f5f5f5] px-6 py-24 border-t border-gray-200">
   <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-3">
+    <div class="lg:col-span-4">
       <SectionLabel label="Core Features" />
     </div>
     
-    <div class="lg:col-span-9">
+    <div class="lg:col-span-8">
       <div class="mb-16" use:fadeInOnScroll>
         <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-2">
           Data streams, calculations,
